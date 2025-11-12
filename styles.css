@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #111;
+}
+
+/* HEADER / HERO */
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* QUIÉNES SOMOS */
+.about {
+  background: #111;
+  color: #fff;
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #ffcc00;
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.about p {
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* MENÚ */
+.menu {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.menu-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+  margin: 12px 0 5px;
+}
+
+.card p {
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+/* SUCURSALES */
+.sucursales {
+  background: #ffcc00;
+  text-align: center;
+  padding: 0;
+}
+
+.sucursales-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  margin: 0;
+}
+
+.sucursales h2 {
+  color: #111;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 40px 0 30px;
+}
+
+/* REDES SOCIALES */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.social img {
+  width: 45px;
+  height: 45px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);
+}
+
+/* NEWSLETTER */
+.newsletter {
+  background: #fff;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.newsletter p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  color: #111;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background: #333;
+}
+
+/* FOOTER DIFERENCIADO */
+.copy {
+  background: #111;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-top
