@@ -166,3 +166,8 @@ body {
   color: #ffcc00;
   font-weight: bold;
   margin-top
+  
+   newsletter-message {
+  margin-top: 8px;
+  font-size: 14px;
+}
