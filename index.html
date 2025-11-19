@@ -76,14 +76,41 @@
     </div>
 
     <!-- Newsletter -->
-    <div class="newsletter">
-      <p>SUSCRIBITE PARA DESCUENTOS Y MÁS</p>
-      <input type="email" placeholder="Tu email address">
-      <button>Subscribe</button>
-    </div>
+   <form id="subscribeForm">
+  <input type="email" id="emailInput" placeholder="Tu email address" required>
+  <button type="submit">Subscribe</button>
+</form>
+
+<p id="confirmationMessage" style="display:none; color:#000; margin-top:10px; font-weight:bold;">
+  ¡Gracias por suscribirte! 🎉
+</p>
 
     <p class="copy">© 2025 BIG PONS</p>
   </section>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('newsletter-form');
+    const emailInput = document.getElementById('newsletter-email');
+    const message = document.getElementById('newsletter-message');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // que no recargue la página
+
+      const email = emailInput.value.trim();
+
+      if (email === '') {
+        message.textContent = 'Por favor escribí tu email 😊';
+        message.style.color = '#111';
+        return;
+      }
+
+      message.textContent = '¡Gracias! Te suscribiste con ' + email;
+      message.style.color = '#111';
+      emailInput.value = '';
+    });
+  });
+</script>
 
 </body>
 </html>
+
